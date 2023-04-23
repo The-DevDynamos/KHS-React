@@ -1,0 +1,275 @@
+@import url("./bootstrap.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Lora&family=Passion+One&family=Playfair+Display&family=Roboto&display=swap');
+@import url("./plans.css");
+@import url("./repair_process.css");
+@import url("./footer.css");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+/*NAVBAR */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  height: 50px;
+}
+
+
+nav .navbar-toggler-icon {
+  width: 20px;
+}
+
+nav .navbar-toggler:focus {
+  outline: none;
+}
+
+
+/*SERVICES-SECTION */
+
+.services{
+  padding: 0 40px 20px 40px;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  position: fixed;
+  top: 50px;
+  z-index: 11;
+  background-color: #ffffff;
+  box-shadow: 0 0 7.4px rgba(0, 0, 0, 0.3);
+}
+
+.services ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.services ul li {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin: 8px;
+  border-radius: 14px;
+  font-size: 15px;
+}
+
+.services ul li:first-child {
+  background-color: #1E2640;
+  color: white;
+}
+
+.services ul li:first-child:hover{
+  background-color: #000000;
+}
+
+.services ul li:hover {
+  background-color: #D9E4EC;
+}
+
+
+
+.services:hover {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+
+/*HERO SECTION */
+
+.hero {
+  margin-top: 110px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.hero--image {
+  width: 100%;
+  transform: skewX(-10deg);
+  transform-origin: 0% 100%;
+}
+
+
+.hero--text {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hero .btn-group .btn{
+  margin: 15px;
+  border-radius: 0;
+}
+
+.hero .btn-group .btn-success {
+  max-width: fit-content;
+}
+
+
+.hero .btn-group {
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+
+
+/*WHY US SECTION */
+.why-us-section {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.why-us-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.why-us-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.why-us-section h2 .text-danger {
+  color: red;
+}
+
+.why-us-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.why-us-section li {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+
+
+
+/*ABOUT SECTION */
+
+/*About */
+
+.about-section {
+  background: linear-gradient(to bottom right, #1abc9c, #2ecc71);
+  background: #333333;
+  color: white;
+  transition: background-color 0.5s ease-in-out;
+  padding: 10px;
+}
+
+.about-section:hover {
+  background-color: #1b1b1b;
+}
+
+.about-header,
+.about {
+  font-size: 15px;
+  padding: 20px;
+}
+
+/*vision-mission */
+
+.vision-mission {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 30vh;
+  grid-gap: 10px;
+}
+
+.vision,
+.mission {
+  padding: 8px;
+}
+
+.vision:hover,
+.mission:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.choose-a-plan {
+  font-family: 'Playfair Display', serif;
+}
+
+.choose-a-plan .plan--stats {
+  font-size: 18px;
+}
+
+
+
+/*MEDIA QUERIES */
+@media(max-width:1030px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero--image {
+    transform: none;
+  }
+
+  .hero--text {
+    padding: 25px;
+  }
+
+}
+
+
+@media(min-width: 700px) {
+  .about-section {
+    padding: 20px;
+  }
+}
+
+@media(max-width:700px){
+  body {
+    font-size: 14px;
+  }
+
+  .why-us-section ul {
+    padding: 20px;
+  }
+
+  .hero-text p {
+    width: 100%;
+  }
+  .vision-mission {
+      grid-template-columns: 100%;
+      grid-auto-rows: minmax(10vh, auto);
+      grid-gap: 0;
+  }
+  .services:hover {
+    height: 50vh;
+    overflow-y: scroll;
+    padding: 0;
+  }
+
+  .services::-webkit-scrollbar{
+    width: 10px;
+    background-color: gray;
+  }
+  .services::-webkit-scrollbar-thumb{
+    background-color: #1E2640;
+    border-radius: 7px;
+  }
+}
+

@@ -1,0 +1,20 @@
+footer {
+    background-color: #2D2E33;
+    height: 70vh;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer--section {
+    margin: 10px;
+    border-left: 1px rgba(255, 255, 255, 0.2) solid;
+    padding: 10px;
+}

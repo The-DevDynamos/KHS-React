@@ -1,0 +1,34 @@
+.repair-process-section {
+    padding: 20px;
+    background-color: silver;
+}
+
+.process {
+    width: 300px;
+    box-shadow: 0 0 3px rgb(0, 0, 0, 0.4);
+    margin: 10px;
+    padding-bottom: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.process--header {
+    padding-top: 10px;
+}
+
+.process--header img {
+    width: 100%;
+}
+
+.process--description {
+    padding: 10px;
+    text-align: center;
+}
+
+
+.processes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
