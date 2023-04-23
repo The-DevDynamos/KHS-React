@@ -4,55 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>React Project README</title>
-  <style>
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-    h1, h2, h3, h4, h5, h6 {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        font-weight: bold;
-        color: #333;
-    }
-    p {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        line-height: 1.5;
-        color: #666;
-    }
-    code {
-        font-family: monospace;
-        background-color: #eee;
-        padding: 0.1rem 0.3rem;
-        border-radius: 3px;
-    }
-    ul {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        padding-left: 2rem;
-    }
-    li {
-        margin-bottom: 0.5rem;
-        line-height: 1.5;
-        color: #666;
-    }
-    pre {
-        font-family: monospace;
-        background-color: #eee;
-        padding: 1rem;
-        border-radius: 3px;
-        overflow-x: scroll;
-    }
-    code {
-        display: block;
-        white-space: pre-wrap;
-        margin-bottom: 1rem;
-        font-size: 0.9rem;
-    }
-  </style>
 </head>
 <body>
   <h1>React Project README</h1>
