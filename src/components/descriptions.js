@@ -85,3 +85,14 @@ export  const footerContent = [
         items : ["About Us", "FAQs", "Contact Support", "Careers"],
     }
 ];
+
+
+export const  navItems  = [
+    "Home",
+    "Our Plans",
+    "About Us",
+    "Contact Us",
+    "Get a Quote",
+];
+
+

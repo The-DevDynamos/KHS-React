@@ -4,14 +4,14 @@ import { footerContent } from "./descriptions";
 function FooterSection ({title, items}) {
     const item = items.map(function (element) {
         return (
-            <li>{element}</li>
+            <li key={items.indexOf(element)}>{element}</li>
         )
     });
     return (
         <div className="footer--section">
             <h3>{title}</h3>
             <ul>
-                <li>{item}</li>
+                {item}
             </ul>
         </div>
     )

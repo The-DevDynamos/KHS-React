@@ -18,3 +18,9 @@ footer ul {
     border-left: 1px rgba(255, 255, 255, 0.2) solid;
     padding: 10px;
 }
+
+@media(max-width:1000px) {
+    footer {
+        justify-content: start;
+    }
+}

@@ -10,4 +10,13 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+  <script>
+    window.addEventListener('resize', () => {
+      const menu =document.querySelector(".side-bar");
+      if (menu.classList.contains('visible-item')) {
+        menu.classList.toggle("visible-item");
+      }
+    }, true);
+  </script>
+
 </html>

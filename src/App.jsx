@@ -7,11 +7,13 @@ import About from "./components/about";
 import ChooseAPlan from "./components/plans";
 import RepairProcess from "./components/repairs";
 import Footer from "./components/footer";
+import Sidebar from "./components/sidebar";
 
 export default function App () {
   return (
     <div>
       <NavBar />
+      <Sidebar />
       <div>
         <Services />
       </div>

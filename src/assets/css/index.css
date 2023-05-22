@@ -3,6 +3,7 @@
 @import url("./plans.css");
 @import url("./repair_process.css");
 @import url("./footer.css");
+@import url("./sideBar.css");
 
 body {
   padding: 0;
@@ -215,6 +216,16 @@ nav .navbar-toggler:focus {
 }
 
 
+
+
+.hidden-item {
+  display: none;
+}
+
+
+.visible-item {
+  display: block;
+}
 
 /*MEDIA QUERIES */
 @media(max-width:1030px) {
