@@ -1,5 +1,6 @@
 import React from "react";
 import heroImage from "../assets/images/hero_images/realEstate.jpg";
+import { Link } from "react-router-dom";
 
 
 export default function Hero () {
@@ -12,9 +13,9 @@ export default function Hero () {
                     <p>Customize your plan for the needed coverage and rest easy knowing your home is protected.</p>
                 </div>
                 <div className="btn-group">
-                    <button className="btn btn-dark">Get A Free Quote</button>
-                    <button className="btn btn-warning">Submit A Claim</button>
-                    <button className="btn btn-success">What is a home warranty?</button>
+                    <button className="btn btn-dark"><Link className ="link-white" to="/authuser">Get A Free Quote</Link></button>
+                    <button className="btn btn-warning"><Link className ="link-white" to="/authuser">Submit A Claim</Link></button>
+                    <button className="btn btn-success"><Link className ="link-white" to="/authuser">What is a home warranty?</Link></button>
                 </div>
             </div>
             <div className="banner">

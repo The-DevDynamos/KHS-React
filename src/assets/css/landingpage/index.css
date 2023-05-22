@@ -123,6 +123,15 @@ nav .navbar-toggler:focus {
   flex-wrap: wrap;
 }
 
+.link-white {
+  color: white;
+  text-decoration: none;
+}
+
+.link-white:hover {
+  color: white;
+  text-decoration: none;
+}
 
 
 /*WHY US SECTION */

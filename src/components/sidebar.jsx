@@ -10,7 +10,7 @@ export default function SideBar () {
         }, 500);
     }
     return (
-        <div className="side-bar">
+        <div className="side-bar" onMouseLeave={toogleSideBar}>
             <img src={closeIcon} alt="Close icon" onClick={toogleSideBar} />
             <ul>
                 {li}
